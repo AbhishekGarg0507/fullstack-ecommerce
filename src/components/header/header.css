@@ -1,0 +1,117 @@
+.headerWrapper{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.headerWrapper .top-strip{
+    padding: var(--mb-0-5) 0;
+    background-color: var(--color-primary);
+}
+
+.headerWrapper .top-strip p{
+    color: #fff;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-normal);
+}
+
+.headerWrapper .top-strip p > span {
+    font-weight: var(--font-bold);
+}
+
+.headerWrapper .header{
+    width: 100%;
+    height: auto;
+    padding: 1.2rem 0;
+}
+.logoWrapper img{
+    width: 100%;
+
+}
+
+.headerSerach{
+    height: 3rem !important;
+    width: 60%;
+    background-color: var(--color-light);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headerSerach > input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.headerSerach > input::-webkit-input-placeholder{
+    font-size: var(--smaller-font-size);
+    color: var(--color-text-lighter);
+}
+
+.headerSerach > button{
+    background: none;
+    color: var(--color-primary);
+}
+
+.profileSection .circleCart, .circleProfile{
+    padding: 8px 8px;
+    border-radius: 50%;
+}
+
+.circleCart{
+    background-color: var(--color-danger-light);
+}
+.circleProfile{
+    background-color: var(--color-light);
+}
+.circle svg {
+    font-size: var(--h2-font-size)
+}
+
+.cart{
+    width: 5rem;
+}
+.cart .cartTotal{
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.price{
+    font-size: var(--normal-font-size);
+}
+
+.category{
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    width: 13rem;
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    font-size: var(--smaller-font-size);
+}
+
+.category .icon svg{
+    font-size: var(--h3-font-size);
+    color: var(--color-background);
+}
+
+/* for larger screens */
+@media screen and (max-width:992px) {
+    .container{
+        max-width: 90%;
+    }
+
+  }
+  /* for medium devices */
+  @media screen and (max-width:768px) {
+      .price{
+        display: none;
+      }
+  }
+  @media screen and (max-width:576px) {
+    
+  }
+  /* for small devices */
+  @media screen and (max-width:350px) {
+    
+  }
