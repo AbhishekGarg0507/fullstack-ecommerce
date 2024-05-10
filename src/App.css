@@ -8,6 +8,7 @@
   --color-background: #fff;
   --color-primary: #233a95;
   --color-secondary: #2bbef9;
+  --color-secondary-light: #f0faff;
   --color-price: #d51243;
   --color-rating: #ffcd00;
   --color-text: #202435;
@@ -100,7 +101,7 @@ ul{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 button{

@@ -1,0 +1,79 @@
+.countryDropdown{
+   border-color: var(--color-border) !important;
+   line-height: 16px !important;
+   width: 12rem;
+}
+.countryDropdown .label{
+    font-size: var(--extra-tiny-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var( --color-text-lighter);
+}
+
+.countryDropdown .name{
+    color: var(--color-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--small-font-size);
+}
+.icon{
+    margin-left: var(--mb-0-5);
+    color: var(--color-primary);
+}
+
+
+
+.MuiPaper-elevation {
+    position: relative;
+    padding: 2rem 1.5rem;
+    width: 28rem;
+}
+
+.MuiPaper-elevation .closeBtn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.MuiPaper-elevation .closeBtn svg{
+    font-size: var(--h2-font-size) !important;
+}
+
+.closeBtn:hover svg{
+    transition: all ease-in-out 0.3s;
+    transform: rotate(45deg);
+}
+
+.MuiPaper-elevation p{
+    font-size: var(--small-font-size);
+    color: #999;
+}
+
+.MuiPaper-elevation h5{
+    font-weight: var(--font-semi-bold);
+}
+
+.MuiPaper-elevation .headerSerach{
+    width: auto;
+    margin-left: 0;
+}
+
+.MuiPaper-elevation .countryList{
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+.countryList li{
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+}
+
+.countryList li a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.countryList li a .MuiChip-label{
+    font-size: var(--tiny-font-size) !important;
+    font-weight: var(--font-semi-bold);
+    color: var(--color-text-lighter);
+}

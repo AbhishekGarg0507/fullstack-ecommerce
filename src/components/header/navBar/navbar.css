@@ -1,0 +1,34 @@
+.categoryBtn{
+    font-size: var(--small-font-size) !important;
+    text-transform: uppercase;
+    background-color: var(--color-secondary);
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: var(--color-background);
+    font-weight: var(--font-bold);
+
+}
+.categoryBtn svg{
+    font-size: var(--h2-font-size);
+}
+
+.nav_listItem a{
+    text-decoration: none;
+    color: var(--color-text-lighter) !important;
+    font-size: var(--normal-font-size);
+    padding: 0 20px;
+    font-weight: var(--font-semi-bold);
+}
+
+.nav_listItem a:hover{
+    background-color: var(--color-secondary-light);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--color-secondary) !important;
+    
+}
+
+.nav_listItem a svg {
+    font-size: var(--h3-font-size) !important;
+    margin: 0px 4px;
+}

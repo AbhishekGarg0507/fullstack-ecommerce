@@ -29,7 +29,7 @@
 
 .headerSerach{
     height: 3rem !important;
-    width: 60%;
+    width: 100%;
     background-color: var(--color-light);
     padding: 10px;
     border-radius: 5px;
@@ -50,6 +50,10 @@
 .headerSerach > button{
     background: none;
     color: var(--color-primary);
+}
+
+.profileSection{
+    width: 10rem;
 }
 
 .profileSection .circleCart, .circleProfile{
@@ -79,21 +83,6 @@
     font-size: var(--normal-font-size);
 }
 
-.category{
-    background-color: var(--color-secondary);
-    color: var(--color-background);
-    border-radius: 1.5rem;
-    padding: 0.5rem;
-    width: 13rem;
-    font-weight: var(--font-semi-bold);
-    text-transform: uppercase;
-    font-size: var(--smaller-font-size);
-}
-
-.category .icon svg{
-    font-size: var(--h3-font-size);
-    color: var(--color-background);
-}
 
 /* for larger screens */
 @media screen and (max-width:992px) {

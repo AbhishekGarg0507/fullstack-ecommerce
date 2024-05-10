@@ -1,14 +1,14 @@
 import React from 'react'
 import './header.css'
-import SearchBox from '../searchBox/SearchBox'
+import SearchBox from './searchBox/SearchBox'
 import logo from '../../assets/logo4.jpg'
+import Navbar from './navBar/Navbar'
 import { Link } from 'react-router-dom'
-import CountryDropdown from '../CountryDropdown/CountryDropdown'
+import CountryDropdown from './CountryDropdown/CountryDropdown'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Tooltip} from '@mui/material';
+
 import Badge from '@mui/material/Badge'
 
 const header = () => {
@@ -33,25 +33,24 @@ const header = () => {
 
               <div className="col-sm-10 d-flex align-items-center">
                 <CountryDropdown/>
-                <SearchBox />
-                <div className='d-flex align-items-center profileSection ml-auto'>
+                <SearchBox placeholder={'Search for products...'} />
+                <span className=' profileSection ml-auto'>
                   <Tooltip title="Profile" arrow>
                     <button className='circleProfile mr-3'>
                       <PersonOutlineOutlinedIcon />
                     </button>
                   </Tooltip>
 
-                  <div className='d-flex align-items-center ml-auto'>
-                    <span className="price mr-2">INR 23.00</span>
+                  
                     
                       <button className='circleCart'>
                       <Badge badgeContent={4} color='error'>
                         <ShoppingCartOutlinedIcon color='error'/>
                       </Badge>
                       </button>
-                  </div>
                   
-                </div>
+                  
+                </span>
 
               </div>
             </div>
@@ -59,28 +58,8 @@ const header = () => {
 
         </header>
 
-        <nav className='container'>
-          <div className="row">
-            <div className="col-sm-3">
-              <button className='category d-flex justify-content-between align-items-center'>
-                  <span className='icon'><MenuIcon /></span>
-                  All Categories
-                  <span className='icon'><KeyboardArrowDownIcon /></span>
-              </button>
-            </div>
-            <div className="col-sm-9">
-              <ul className='d-flex justify-content-between'>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
+        
 
       </div>
     </div>
